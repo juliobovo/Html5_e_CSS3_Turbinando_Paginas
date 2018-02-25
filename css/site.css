@@ -105,7 +105,28 @@ em {
     height: 40px;
     display: block;
     text-indent: -99999px;
+
 }
+
+/* regras para adicionar titulos estilizados ao link*/
+.icones-redes-sociais a {
+    position: relative;
+}
+
+.icones-redes-sociais a:hover::after,
+.icones-redes-sociais a:focus::after {
+    /* attr para fazer atribuacao as regras para data-tootip*/
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-indent: 0;
+    width: 300%;
+    background: black;
+    font-size: .75em;
+}
+/* fim regras para adicionar titulos estilizados ao link*/
+
 
 .github {
     background-image: url(../imagens/github.png);
