@@ -5,6 +5,13 @@
     margin: 1em 2em;
     width: 30ch;
     box-sizing: border-box;
+    /* ease é a suavizaçao da transitao
+        ease-in - no começo
+        ease-out- no final
+    */
+    transition: transform 1s, box-shadow 1s ease;
+    /*TEMPO QUE A TRANSIÇÃO DEMORA PARA COMEÇAR*/
+    transition-delay: 0s,1s;
 }
 
 .citacao-bio:hover,
